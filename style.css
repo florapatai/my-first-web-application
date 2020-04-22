@@ -1,0 +1,55 @@
+body {
+    background: lightgrey;
+}
+
+.viewer {
+    width: 900px;
+    height: 500px;
+    position: relative;
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -460px;
+    display: flex;
+    flex-direction: row;
+}
+
+#photo {
+    width: 800px;
+}
+
+#leftarrow, #rigtharrow {
+    padding: 20px;
+    background: whitesmoke;
+    cursor: pointer;
+}
+
+#rigtharrow {
+    transform: rotate(0.5turn);
+}
+
+.title {
+    height: 120px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    margin-left: 57px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 780px;    
+}
+
+.viewer .title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 74%;
+}
+
+p {
+    margin-top: -12px;
+    
+}
+
