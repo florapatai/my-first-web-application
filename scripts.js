@@ -14,7 +14,7 @@ let palmtrees = createPhotoData('images/palmtrees.jpg', 'The beach with palmtree
 let rainbow = createPhotoData('images/rainbow.jpg', 'The rainbow is hope', 'The beauty of raining is that there can be rainbow afterwards which brings hope for the sunny weather.');
 let roadtomountain = createPhotoData('images/roadtomountain.jpg', 'The road to the mountain', 'The lonely and long road to the beautiful, snowy mountain goes through a deserted area.');
 let sealion = createPhotoData('images/sealion.jpg', 'The sea lion in action', 'The sea lion was captured in the middle of catching a penguin for lunch.');
-let tajmahal = createPhotoData('images/tajmahal.jpg', 'Taj Mahal', 'The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor Shah Jahan (reigned from 1628 to 1658) to house the tomb of his favourite wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself.');
+let tajmahal = createPhotoData('images/tajmahal.png', 'Taj Mahal', 'The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor Shah Jahan (reigned from 1628 to 1658) to house the tomb of his favourite wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself.');
 
 let myImages = [forest, moon, niagara, palmtrees, rainbow, roadtomountain, sealion, tajmahal];
 let currentPhoto = 0; 
@@ -30,7 +30,7 @@ let loadPhoto = (photoNumber) => {
 }
 
 $('#leftarrow').click(() => {
-  if(currentPhoto > 1) {
+  if(currentPhoto > 0) {
   currentPhoto--;
   }
   loadPhoto(currentPhoto);

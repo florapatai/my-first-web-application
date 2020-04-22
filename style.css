@@ -20,13 +20,13 @@ body {
     width: 800px;
 }
 
-#leftarrow, #rigtharrow {
+#leftarrow, #rightarrow {
     padding: 20px;
     background: whitesmoke;
     cursor: pointer;
 }
 
-#rigtharrow {
+#rightarrow {
     transform: rotate(0.5turn);
 }
 
