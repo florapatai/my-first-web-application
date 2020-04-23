@@ -30,15 +30,21 @@ let loadPhoto = (photoNumber) => {
 }
 
 $('#leftarrow').click(() => {
-  if(currentPhoto > 0) {
+  if(currentPhoto === 0) {
+    currentPhoto = 8;
+  }
+  else {
   currentPhoto--;
   }
   loadPhoto(currentPhoto);
 });
 
 $('#rightarrow').click(() => {
-  if(currentPhoto < 8) {
-  currentPhoto++;
+  if(currentPhoto === 8) {
+    currentPhoto = 0;
+  }
+  else {
+    currentPhoto++;
   }
   loadPhoto(currentPhoto);
 });
