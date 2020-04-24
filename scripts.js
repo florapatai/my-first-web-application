@@ -50,3 +50,17 @@ $('#rightarrow').click(() => {
 });
 
 loadPhoto(currentPhoto);
+
+myImages.forEach((item, index) => {
+  $('#thumbnails').append(`<img class="box">`);
+
+  $('.box').attr('src', myImages[currentPhoto].photo);
+  $('.box').click((event) => {
+    let indexClicked = $(event.target).attr('data-index');
+    // indexClicked is now a string! if you need it as a number you have to change it
+    // because for example "1" + 1 is going to be "11" and not 2
+    let numberIndex = parseInt(indexClicked);
+    // now numberIndex is a number
+    $('#clicked').text(data[indexClicked]);
+  });
+});

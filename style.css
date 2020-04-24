@@ -7,7 +7,6 @@ body {
     height: 500px;
     position: relative;
     position: absolute;
-    display: inline-block;
     top: 50%;
     left: 50%;
     margin-top: -250px;
@@ -52,4 +51,27 @@ p {
     margin-top: -12px;
     
 }
+
+#thumbnails { 
+    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 300px;
+    margin-left: -320px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-between;
+}
+
+.box {
+    /* position: absolute; */
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    background: lime;
+}
+
+
 
